@@ -11,9 +11,7 @@ export default function HomeScreen(){
      if (!city) return;
 
      const timer = setTimeout(() => {
-
       fetchWeather(city)
-
      }, 500)
 
      return () => clearTimeout(timer)
